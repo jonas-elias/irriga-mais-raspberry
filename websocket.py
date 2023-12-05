@@ -8,7 +8,7 @@ async def webSocketConnect(websocket):
         await asyncio.sleep(1)
 
 async def main():
-    uri = "ws://localhost:8000/ws/pivo/0ba0bc7a016a873a5250abf65d4fdc0/"
+    uri = "ws://15.229.109.128:8080/ws/pivo/0ba0bc7a016a873a5250abf65d4fdc0/"
     async with connect(uri) as websocket:
         await webSocketConnect(websocket)
 
